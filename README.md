@@ -133,4 +133,4 @@ for s in r00_prep r0_features r1_persistence r2_transitions r3_conditional \
 Seeds are fixed. The full pipeline was re-run end to end from a clean copy, and the outputs in `results/` are from that run.
 
 ---
-*Author: Muhammad Talal Malik · Business Data Analytics, COMSATS University*
+*Author: Muhammad Talal Malik*
