@@ -21,44 +21,56 @@
 
 A raw ATR percentile on index CFDs is mostly a clock: 93 to 96% of "compressed" bars on NQ/ES/YM fell in the Asian session. Each bar is therefore scaled by the volatility normally seen *at that time of day*:
 
-$$\text{ATR}_t = \tfrac{13}{14}\,\text{ATR}_{t-1} + \tfrac{1}{14}\,(H_t - L_t)$$
+```math
+\text{ATR}_t = \tfrac{13}{14}\,\text{ATR}_{t-1} + \tfrac{1}{14}\,(H_t - L_t)
+```
 
-$$S_\tau(t) = \mathrm{median}\left\{\text{ATR}_u \;:\; \tau(u)=\tau(t),\ u \in \text{previous 60 sessions}\right\}, \qquad \text{abn}_t = \frac{\text{ATR}_t}{S_\tau(t)}$$
+```math
+S_\tau(t) = \mathrm{median}\left\{\text{ATR}_u \;:\; \tau(u)=\tau(t),\ u \in \text{previous 60 sessions}\right\}, \qquad \text{abn}_t = \frac{\text{ATR}_t}{S_\tau(t)}
+```
 
-where $\tau(\cdot)$ is the New York 5-minute slot. The baseline is shifted one session so that today never contributes to its own expectation. States come from a causal 100-bar percentile rank:
+where $`\tau(\cdot)`$ is the New York 5-minute slot. The baseline is shifted one session so that today never contributes to its own expectation. States come from a causal 100-bar percentile rank:
 
-$$\pi_t = \sum_{j=0}^{99} \mathbf{1}\left[\text{abn}_{t-j} \le \text{abn}_t\right] \;\;(\%\text{ of the trailing 100 bars}), \qquad
-\text{state}_t = \begin{cases} \text{compressed} & \pi_t < 20 \\ \text{normal} & 20 \le \pi_t \le 80 \\ \text{high} & 80 < \pi_t \le 95 \\ \text{extreme} & \pi_t > 95 \end{cases}$$
+```math
+\pi_t = \sum_{j=0}^{99} \mathbf{1}\left[\text{abn}_{t-j} \le \text{abn}_t\right] \;\;(\%\text{ of the trailing 100 bars}), \qquad
+\text{state}_t = \begin{cases} \text{compressed} & \pi_t < 20 \\ \text{normal} & 20 \le \pi_t \le 80 \\ \text{high} & 80 < \pi_t \le 95 \\ \text{extreme} & \pi_t > 95 \end{cases}
+```
 
-Every feature at bar $t$ uses only information available at the close of $t$.
+Every feature at bar $`t`$ uses only information available at the close of $`t`$.
 
 ### 2. Persistence against explicit nulls
 
-$$\hat P_k = P(\text{compressed}_{t+k} \mid \text{compressed}_t) \quad\text{vs}\quad \left(\mathbf{P}^k\right)_{cc}$$
+```math
+\hat P_k = P(\text{compressed}_{t+k} \mid \text{compressed}_t) \quad\text{vs}\quad \left(\mathbf{P}^k\right)_{cc}
+```
 
-where $\mathbf{P}$ is the estimated one-step transition matrix. If states were Markov the two would match, so the gap between them is memory that a Markov model misses. The unconditional rate and an i.i.d. surrogate (the range series randomly permuted) give the floor. Deseasonalising before defining states is what removes the time-of-day confound.
+where $`\mathbf{P}`$ is the estimated one-step transition matrix. If states were Markov the two would match, so the gap between them is memory that a Markov model misses. The unconditional rate and an i.i.d. surrogate (the range series randomly permuted) give the floor. Deseasonalising before defining states is what removes the time-of-day confound.
 
 ![Regime persistence](figures/fig1_regime_persistence.png)
 
 ### 3. Session-handover test
 One observation per boundary per day, so time of day is controlled exactly:
 * **pre-window:** the 12 bars (1 h) ending at the boundary. "Quiet" means bottom quintile of pre-window `abn` for that boundary.
-* **outcome:** a clock-referenced spike, $\max_{j \le 24} \text{range}_{t+j} / S_\tau(t+j) \ge 2$, within the next 2 hours.
-* **inference:** a day-block bootstrap of $\hat p_{\text{quiet}} - \hat p_{\text{rest}}$, resampling whole sessions (3,000 draws) so that intraday dependence cannot shrink the interval.
+* **outcome:** a clock-referenced spike, $`\max_{j \le 24} \text{range}_{t+j} / S_\tau(t+j) \ge 2`$, within the next 2 hours.
+* **inference:** a day-block bootstrap of $`\hat p_{\text{quiet}} - \hat p_{\text{rest}}`$, resampling whole sessions (3,000 draws) so that intraday dependence cannot shrink the interval.
 
 Elsewhere, effects are compared with a **matched baseline**: direct standardisation on (5-minute slot × calendar month), with numerator and denominator bootstrapped together over days.
 
 ### 4. Multiple-testing control
 All 330 tests are registered in `results/research_log.json`, each with its hypothesis, definition, control, sample size, p-value and an explicit `prespecified` flag (282 pre-specified, 48 exploratory). Pre-specified p-values are controlled with Benjamini–Hochberg:
 
-$$k^\ast = \max\left\{ i : p_{(i)} \le \frac{q\,i}{m} \right\}, \qquad \text{reject } H_{(1)},\dots,H_{(k^\ast)}, \qquad q = 0.10$$
+```math
+k^\ast = \max\left\{ i : p_{(i)} \le \frac{q\,i}{m} \right\}, \qquad \text{reject } H_{(1)},\dots,H_{(k^\ast)}, \qquad q = 0.10
+```
 
 applied separately to the volatility and directional families.
 
 ### 5. Directional test
-Event: an impulse bar emerging from compression ($\pi_{j-1} < 20$ and $\text{range}_j / S_\tau(j) \ge 2$). Direction $d = \mathrm{sign}(C_j - O_j)$, entry at the *next* bar's open, return measured in units of the impulse bar's own range $R_j$ so that costs sit on the same axis:
+Event: an impulse bar emerging from compression ($`\pi_{j-1} < 20`$ and $`\text{range}_j / S_\tau(j) \ge 2`$). Direction $`d = \mathrm{sign}(C_j - O_j)`$, entry at the *next* bar's open, return measured in units of the impulse bar's own range $`R_j`$ so that costs sit on the same axis:
 
-$$r_{j,k} = \frac{d\,(C_{j+k} - O_{j+1})}{R_j}, \qquad k \in \{1,3,6,12,24\}$$
+```math
+r_{j,k} = \frac{d\,(C_{j+k} - O_{j+1})}{R_j}, \qquad k \in \{1,3,6,12,24\}
+```
 
 ![Directional null](figures/fig4_directional_null.png)
 
