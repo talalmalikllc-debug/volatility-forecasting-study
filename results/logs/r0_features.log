@@ -1,0 +1,24 @@
+./scripts/r0_features.py:119: UserWarning: no explicit representation of timezones available for np.datetime64
+  .astype("datetime64[s]").astype("int64"))
+US100.cash   rows=320,046  seasonal coverage=0.982  compressed(raw)=0.312  compressed(adj)=0.294  episodes raw= 3679  adj= 9079
+             overlap: 0.237 Jaccard; adj-compression in Asia=0.360 vs raw=0.909
+./scripts/r0_features.py:119: UserWarning: no explicit representation of timezones available for np.datetime64
+  .astype("datetime64[s]").astype("int64"))
+US500.cash   rows=319,965  seasonal coverage=0.982  compressed(raw)=0.311  compressed(adj)=0.294  episodes raw= 3494  adj= 8908
+             overlap: 0.231 Jaccard; adj-compression in Asia=0.359 vs raw=0.924
+./scripts/r0_features.py:119: UserWarning: no explicit representation of timezones available for np.datetime64
+  .astype("datetime64[s]").astype("int64"))
+US30.cash    rows=320,043  seasonal coverage=0.982  compressed(raw)=0.321  compressed(adj)=0.291  episodes raw= 2949  adj= 9076
+             overlap: 0.224 Jaccard; adj-compression in Asia=0.375 vs raw=0.936
+./scripts/r0_features.py:119: UserWarning: no explicit representation of timezones available for np.datetime64
+  .astype("datetime64[s]").astype("int64"))
+GER40.cash   rows=314,733  seasonal coverage=0.982  compressed(raw)=0.339  compressed(adj)=0.294  episodes raw= 5076  adj= 8638
+             overlap: 0.349 Jaccard; adj-compression in Asia=0.369 vs raw=0.589
+./scripts/r0_features.py:119: UserWarning: no explicit representation of timezones available for np.datetime64
+  .astype("datetime64[s]").astype("int64"))
+XAUUSD       rows=320,694  seasonal coverage=0.982  compressed(raw)=0.239  compressed(adj)=0.287  episodes raw= 4371  adj= 9276
+             overlap: 0.319 Jaccard; adj-compression in Asia=0.371 vs raw=0.469
+./scripts/r0_features.py:119: UserWarning: no explicit representation of timezones available for np.datetime64
+  .astype("datetime64[s]").astype("int64"))
+EURUSD       rows=338,814  seasonal coverage=0.983  compressed(raw)=0.273  compressed(adj)=0.284  episodes raw= 3855  adj=10395
+             overlap: 0.288 Jaccard; adj-compression in Asia=0.402 vs raw=0.515

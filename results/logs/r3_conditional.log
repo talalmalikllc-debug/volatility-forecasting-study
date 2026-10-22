@@ -1,0 +1,135 @@
+
+=== XAUUSD ===
+  PART 6 -- which compression variable carries information?
+    raw      n= 48283  P(spike)=0.596 vs matched 0.629  lift=0.947 CI[0.922,0.973] p=0.000   fwd_abn lift=0.939 CI[0.918,0.963]
+    adj      n= 74376  P(spike)=0.500 vs matched 0.554  lift=0.902 CI[0.876,0.927] p=0.000   fwd_abn lift=0.930 CI[0.911,0.950]
+    abn quintiles (q1 = quietest for this clock time):
+      q1 n= 55953 P(spike)=0.268 matched=0.404 lift=0.662 CI[0.625,0.700]   fwd_abn lift=0.841
+      q2 n= 55108 P(spike)=0.395 matched=0.466 lift=0.849 CI[0.818,0.881]   fwd_abn lift=0.909
+      q3 n= 54522 P(spike)=0.516 matched=0.533 lift=0.968 CI[0.940,0.997]   fwd_abn lift=0.948
+      q4 n= 54299 P(spike)=0.682 matched=0.608 lift=1.121 CI[1.096,1.147]   fwd_abn lift=0.993
+      q5 n= 54684 P(spike)=0.914 matched=0.759 lift=1.204 CI[1.181,1.227]   fwd_abn lift=1.201
+  PART 3 -- depth (matched):
+    d0-5     n= 3086 lift=1.087 CI[1.057,1.116] p=0.000
+    d5-10    n= 1060 lift=1.090 CI[1.033,1.148] p=0.001
+    d10-15   n= 1507 lift=0.988 CI[0.944,1.032] p=0.591
+    d15-20   n= 2305 lift=0.985 CI[0.947,1.025] p=0.465
+  PART 4 -- duration already compressed (matched):
+    1-3      n= 3969 spike lift=0.992 CI[0.959,1.027] p=0.653   fwd_abn lift=0.977 CI[0.957,1.000]
+    4-6      n= 1071 spike lift=1.078 CI[1.027,1.128] p=0.003   fwd_abn lift=1.001 CI[0.974,1.031]
+    7-12     n= 1021 spike lift=1.108 CI[1.059,1.156] p=0.000   fwd_abn lift=1.017 CI[0.989,1.046]
+    13-24    n= 1013 spike lift=1.098 CI[1.054,1.140] p=0.000   fwd_abn lift=1.043 CI[1.012,1.077]
+    25+      n=  884 spike lift=1.060 CI[1.011,1.109] p=0.019   fwd_abn lift=1.009 CI[0.975,1.043]
+
+=== EURUSD ===
+  PART 6 -- which compression variable carries information?
+    raw      n= 62023  P(spike)=0.520 vs matched 0.554  lift=0.939 CI[0.913,0.966] p=0.000   fwd_abn lift=0.932 CI[0.918,0.948]
+    adj      n= 81470  P(spike)=0.446 vs matched 0.498  lift=0.894 CI[0.865,0.923] p=0.000   fwd_abn lift=0.924 CI[0.911,0.938]
+    abn quintiles (q1 = quietest for this clock time):
+      q1 n= 60227 P(spike)=0.306 matched=0.428 lift=0.714 CI[0.679,0.746]   fwd_abn lift=0.847
+      q2 n= 60211 P(spike)=0.386 matched=0.462 lift=0.835 CI[0.807,0.863]   fwd_abn lift=0.919
+      q3 n= 60103 P(spike)=0.470 matched=0.503 lift=0.934 CI[0.908,0.959]   fwd_abn lift=0.957
+      q4 n= 60030 P(spike)=0.579 matched=0.534 lift=1.084 CI[1.059,1.110]   fwd_abn lift=1.013
+      q5 n= 59778 P(spike)=0.815 matched=0.626 lift=1.302 CI[1.274,1.330]   fwd_abn lift=1.210
+  PART 3 -- depth (matched):
+    d0-5     n= 3678 lift=1.101 CI[1.070,1.130] p=0.000
+    d5-10    n= 1350 lift=1.066 CI[1.014,1.116] p=0.013
+    d10-15   n= 1685 lift=1.029 CI[0.982,1.076] p=0.216
+    d15-20   n= 2599 lift=0.985 CI[0.943,1.027] p=0.481
+  PART 4 -- duration already compressed (matched):
+    1-3      n= 4751 spike lift=1.009 CI[0.976,1.041] p=0.574   fwd_abn lift=0.983 CI[0.969,0.998]
+    4-6      n= 1280 spike lift=1.088 CI[1.036,1.140] p=0.000   fwd_abn lift=1.011 CI[0.991,1.032]
+    7-12     n= 1217 spike lift=1.126 CI[1.076,1.178] p=0.000   fwd_abn lift=1.009 CI[0.987,1.031]
+    13-24    n= 1105 spike lift=1.108 CI[1.062,1.158] p=0.000   fwd_abn lift=1.021 CI[1.000,1.042]
+    25+      n=  959 spike lift=1.053 CI[0.999,1.107] p=0.053   fwd_abn lift=1.002 CI[0.975,1.032]
+
+=== US100.cash ===
+  PART 6 -- which compression variable carries information?
+    raw      n= 88819  P(spike)=0.507 vs matched 0.530  lift=0.957 CI[0.925,0.990] p=0.009   fwd_abn lift=0.957 CI[0.935,0.978]
+    adj      n= 74933  P(spike)=0.499 vs matched 0.552  lift=0.904 CI[0.875,0.932] p=0.000   fwd_abn lift=0.921 CI[0.900,0.942]
+    abn quintiles (q1 = quietest for this clock time):
+      q1 n= 55223 P(spike)=0.260 matched=0.427 lift=0.608 CI[0.573,0.647]   fwd_abn lift=0.774
+      q2 n= 54228 P(spike)=0.390 matched=0.505 lift=0.772 CI[0.743,0.802]   fwd_abn lift=0.858
+      q3 n= 54216 P(spike)=0.532 matched=0.563 lift=0.945 CI[0.917,0.973]   fwd_abn lift=0.935
+      q4 n= 53676 P(spike)=0.706 matched=0.616 lift=1.146 CI[1.122,1.171]   fwd_abn lift=1.018
+      q5 n= 52652 P(spike)=0.915 matched=0.681 lift=1.343 CI[1.320,1.369]   fwd_abn lift=1.318
+  PART 3 -- depth (matched):
+    d0-5     n= 3109 lift=1.086 CI[1.054,1.119] p=0.000
+    d5-10    n= 1038 lift=1.015 CI[0.965,1.068] p=0.532
+    d10-15   n= 1412 lift=0.997 CI[0.952,1.043] p=0.924
+    d15-20   n= 2141 lift=0.986 CI[0.947,1.026] p=0.479
+  PART 4 -- duration already compressed (matched):
+    1-3      n= 3756 spike lift=0.996 CI[0.961,1.033] p=0.833   fwd_abn lift=0.973 CI[0.952,0.997]
+    4-6      n= 1085 spike lift=1.040 CI[0.991,1.090] p=0.119   fwd_abn lift=0.989 CI[0.964,1.015]
+    7-12     n=  998 spike lift=1.092 CI[1.042,1.142] p=0.000   fwd_abn lift=1.014 CI[0.983,1.045]
+    13-24    n=  932 spike lift=1.072 CI[1.023,1.124] p=0.005   fwd_abn lift=1.022 CI[0.986,1.062]
+    25+      n=  929 spike lift=1.070 CI[1.021,1.118] p=0.004   fwd_abn lift=0.991 CI[0.963,1.018]
+
+=== US500.cash ===
+  PART 6 -- which compression variable carries information?
+    raw      n= 83626  P(spike)=0.506 vs matched 0.529  lift=0.957 CI[0.923,0.990] p=0.013   fwd_abn lift=0.954 CI[0.930,0.979]
+    adj      n= 72533  P(spike)=0.498 vs matched 0.556  lift=0.895 CI[0.866,0.924] p=0.000   fwd_abn lift=0.910 CI[0.889,0.934]
+    abn quintiles (q1 = quietest for this clock time):
+      q1 n= 52925 P(spike)=0.233 matched=0.433 lift=0.540 CI[0.502,0.575]   fwd_abn lift=0.734
+      q2 n= 53049 P(spike)=0.374 matched=0.493 lift=0.758 CI[0.727,0.789]   fwd_abn lift=0.845
+      q3 n= 52785 P(spike)=0.521 matched=0.558 lift=0.934 CI[0.903,0.965]   fwd_abn lift=0.918
+      q4 n= 52518 P(spike)=0.729 matched=0.616 lift=1.184 CI[1.157,1.214]   fwd_abn lift=1.024
+      q5 n= 51860 P(spike)=0.938 matched=0.689 lift=1.360 CI[1.333,1.388]   fwd_abn lift=1.343
+  PART 3 -- depth (matched):
+    d0-5     n= 2930 lift=1.068 CI[1.035,1.102] p=0.000
+    d5-10    n=  991 lift=0.997 CI[0.942,1.052] p=0.931
+    d10-15   n= 1338 lift=0.988 CI[0.938,1.038] p=0.617
+    d15-20   n= 2067 lift=0.998 CI[0.955,1.040] p=0.895
+  PART 4 -- duration already compressed (matched):
+    1-3      n= 3563 spike lift=0.992 CI[0.956,1.028] p=0.659   fwd_abn lift=0.968 CI[0.943,0.994]
+    4-6      n= 1025 spike lift=1.020 CI[0.968,1.072] p=0.449   fwd_abn lift=0.983 CI[0.952,1.017]
+    7-12     n=  936 spike lift=1.069 CI[1.016,1.121] p=0.012   fwd_abn lift=0.994 CI[0.956,1.038]
+    13-24    n=  893 spike lift=1.071 CI[1.025,1.123] p=0.007   fwd_abn lift=1.012 CI[0.979,1.048]
+    25+      n=  909 spike lift=1.061 CI[1.010,1.112] p=0.021   fwd_abn lift=0.997 CI[0.967,1.027]
+
+=== US30.cash ===
+  PART 6 -- which compression variable carries information?
+    raw      n= 92483  P(spike)=0.467 vs matched 0.489  lift=0.955 CI[0.920,0.990] p=0.011   fwd_abn lift=0.959 CI[0.937,0.982]
+    adj      n= 73621  P(spike)=0.489 vs matched 0.547  lift=0.893 CI[0.865,0.920] p=0.000   fwd_abn lift=0.920 CI[0.901,0.942]
+    abn quintiles (q1 = quietest for this clock time):
+      q1 n= 54949 P(spike)=0.274 matched=0.445 lift=0.615 CI[0.583,0.649]   fwd_abn lift=0.777
+      q2 n= 54302 P(spike)=0.388 matched=0.494 lift=0.785 CI[0.755,0.813]   fwd_abn lift=0.862
+      q3 n= 53950 P(spike)=0.503 matched=0.542 lift=0.927 CI[0.900,0.955]   fwd_abn lift=0.933
+      q4 n= 53475 P(spike)=0.685 matched=0.596 lift=1.149 CI[1.122,1.178]   fwd_abn lift=1.028
+      q5 n= 53518 P(spike)=0.917 matched=0.682 lift=1.344 CI[1.317,1.373]   fwd_abn lift=1.293
+  PART 3 -- depth (matched):
+    d0-5     n= 3085 lift=1.046 CI[1.016,1.078] p=0.004
+    d5-10    n=  990 lift=1.013 CI[0.957,1.068] p=0.645
+    d10-15   n= 1444 lift=1.045 CI[0.999,1.090] p=0.055
+    d15-20   n= 2208 lift=1.000 CI[0.958,1.042] p=0.993
+  PART 4 -- duration already compressed (matched):
+    1-3      n= 3818 spike lift=1.026 CI[0.990,1.061] p=0.177   fwd_abn lift=0.988 CI[0.967,1.009]
+    4-6      n= 1069 spike lift=1.010 CI[0.964,1.054] p=0.689   fwd_abn lift=0.973 CI[0.948,1.000]
+    7-12     n=  959 spike lift=1.022 CI[0.970,1.073] p=0.384   fwd_abn lift=0.982 CI[0.954,1.010]
+    13-24    n=  947 spike lift=1.055 CI[1.008,1.104] p=0.025   fwd_abn lift=1.026 CI[0.992,1.062]
+    25+      n=  934 spike lift=1.041 CI[0.991,1.090] p=0.105   fwd_abn lift=0.992 CI[0.964,1.019]
+
+=== GER40.cash ===
+  PART 6 -- which compression variable carries information?
+    raw      n= 62474  P(spike)=0.602 vs matched 0.638  lift=0.944 CI[0.921,0.968] p=0.000   fwd_abn lift=0.929 CI[0.909,0.951]
+    adj      n= 63027  P(spike)=0.485 vs matched 0.546  lift=0.888 CI[0.859,0.917] p=0.000   fwd_abn lift=0.913 CI[0.893,0.933]
+    abn quintiles (q1 = quietest for this clock time):
+      q1 n= 42566 P(spike)=0.341 matched=0.483 lift=0.707 CI[0.670,0.742]   fwd_abn lift=0.788
+      q2 n= 45503 P(spike)=0.414 matched=0.515 lift=0.804 CI[0.776,0.833]   fwd_abn lift=0.868
+      q3 n= 48216 P(spike)=0.503 matched=0.548 lift=0.918 CI[0.892,0.945]   fwd_abn lift=0.929
+      q4 n= 49316 P(spike)=0.645 matched=0.585 lift=1.103 CI[1.077,1.130]   fwd_abn lift=1.014
+      q5 n= 50475 P(spike)=0.901 matched=0.707 lift=1.274 CI[1.250,1.300]   fwd_abn lift=1.256
+  PART 3 -- depth (matched):
+    d0-5     n= 2517 lift=1.070 CI[1.037,1.102] p=0.000
+    d5-10    n=  844 lift=0.992 CI[0.936,1.047] p=0.773
+    d10-15   n= 1198 lift=0.988 CI[0.933,1.039] p=0.653
+    d15-20   n= 1790 lift=0.962 CI[0.918,1.006] p=0.093
+  PART 4 -- duration already compressed (matched):
+    1-3      n= 3100 spike lift=0.989 CI[0.950,1.029] p=0.577   fwd_abn lift=0.974 CI[0.953,0.996]
+    4-6      n=  868 spike lift=1.023 CI[0.968,1.078] p=0.411   fwd_abn lift=0.998 CI[0.962,1.043]
+    7-12     n=  804 spike lift=1.002 CI[0.946,1.055] p=0.937   fwd_abn lift=0.999 CI[0.966,1.033]
+    13-24    n=  743 spike lift=1.058 CI[1.000,1.114] p=0.049   fwd_abn lift=1.011 CI[0.978,1.047]
+    25+      n=  834 spike lift=1.069 CI[1.021,1.119] p=0.005   fwd_abn lift=1.006 CI[0.973,1.044]
+[research log] 42 new, 78 total -> results/research_log.json
+
+wrote results/r3_conditional.json

@@ -1,0 +1,14 @@
+US100.cash   bars=320,046  2022-01-02 23:05:00+00:00 -> 2026-07-29 10:45:00+00:00  dropped_dst_nat=0  gaps(non-300s)=1198  off_grid=1  spread_med=145pt
+US500.cash   bars=319,965  2022-01-02 23:05:00+00:00 -> 2026-07-29 10:50:00+00:00  dropped_dst_nat=0  gaps(non-300s)=1269  off_grid=1  spread_med=45pt
+US30.cash    bars=320,043  2022-01-02 23:05:00+00:00 -> 2026-07-29 10:45:00+00:00  dropped_dst_nat=0  gaps(non-300s)=1192  off_grid=1  spread_med=188pt
+GER40.cash   bars=314,733  2022-01-03 00:00:00+00:00 -> 2026-07-29 10:50:00+00:00  dropped_dst_nat=0  gaps(non-300s)=1292  off_grid=1  spread_med=139pt
+XAUUSD       bars=320,694  2022-01-02 23:05:00+00:00 -> 2026-07-29 10:55:00+00:00  dropped_dst_nat=0  gaps(non-300s)=1182  off_grid=1  spread_med=15pt
+EURUSD       bars=338,814  2022-01-02 22:05:00+00:00 -> 2026-07-29 11:00:00+00:00  dropped_dst_nat=0  gaps(non-300s)=1230  off_grid=1  spread_med=2pt
+
+--- clock verification: mean tick_volume by NY time-of-day ---
+  US100.cash  Jan (EST): peak at NY 09:30   09:25=    1024 -> 09:30=    1685 (x1.6)
+  US100.cash  Jul (EDT): peak at NY 09:30   09:25=    1034 -> 09:30=    1759 (x1.7)
+  US500.cash  Jan (EST): peak at NY 09:30   09:25=     255 -> 09:30=     716 (x2.8)
+  US500.cash  Jul (EDT): peak at NY 09:30   09:25=     220 -> 09:30=     628 (x2.8)
+
+wrote results/panel_m5.pkl

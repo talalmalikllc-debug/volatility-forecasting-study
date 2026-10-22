@@ -1,0 +1,87 @@
+
+=== XAUUSD ===
+  asia_to_london (causal trailing-250 flag): n=1038 quiet=231
+    P(spike) diff = -0.392 CI[-0.457,-0.324] p=0.000
+    per year P(spike) quiet vs rest: 2022:0.43/0.75  2023:0.35/0.68  2024:0.35/0.72  2025:0.35/0.82  2026:0.21/0.72
+    P(leaves opening range) diff = +0.018 CI[-0.006,+0.040] p=0.117
+    P(reverts to mid before extending) quiet=0.584 rest=0.529 diff=+0.055 CI[-0.019,+0.128] p=0.147
+    fade expectancy NET of spread: quiet=+0.0637 CI[-0.0132,+0.1391]  rest=+0.0250 CI[-0.0184,+0.0668]   (opening range = 42x spread when quiet)
+  ny_cash_open (causal trailing-250 flag): n=1034 quiet=226
+    P(spike) diff = -0.278 CI[-0.350,-0.206] p=0.000
+    per year P(spike) quiet vs rest: 2022:0.38/0.72  2023:0.57/0.74  2024:0.51/0.72  2025:0.43/0.80  2026:0.55/0.85
+    P(leaves opening range) diff = +0.015 CI[-0.031,+0.058] p=0.524
+    P(reverts to mid before extending) quiet=0.426 rest=0.381 diff=+0.046 CI[-0.033,+0.123] p=0.237
+    fade expectancy NET of spread: quiet=+0.0190 CI[-0.0546,+0.0926]  rest=+0.0277 CI[-0.0095,+0.0641]   (opening range = 81x spread when quiet)
+
+=== EURUSD ===
+  asia_to_london (causal trailing-250 flag): n=1045 quiet=239
+    P(spike) diff = -0.283 CI[-0.353,-0.214] p=0.000
+    per year P(spike) quiet vs rest: 2022:0.40/0.90  2023:0.53/0.78  2024:0.47/0.77  2025:0.44/0.74  2026:0.62/0.66
+    P(leaves opening range) diff = +0.020 CI[-0.009,+0.047] p=0.167
+    P(reverts to mid before extending) quiet=0.558 rest=0.499 diff=+0.059 CI[-0.015,+0.131] p=0.121
+    fade expectancy NET of spread: quiet=+0.0746 CI[+0.0012,+0.1480]  rest=+0.0304 CI[-0.0107,+0.0713]   (opening range = infx spread when quiet)
+  ny_cash_open (causal trailing-250 flag): n=1045 quiet=226
+    P(spike) diff = -0.237 CI[-0.307,-0.163] p=0.000
+    per year P(spike) quiet vs rest: 2022:0.46/0.80  2023:0.43/0.63  2024:0.31/0.64  2025:0.45/0.66  2026:0.54/0.69
+    P(leaves opening range) diff = +0.013 CI[-0.024,+0.045] p=0.486
+    P(reverts to mid before extending) quiet=0.453 rest=0.460 diff=-0.008 CI[-0.082,+0.066] p=0.845
+    fade expectancy NET of spread: quiet=+0.0324 CI[-0.0434,+0.1053]  rest=+0.0619 CI[+0.0267,+0.0976]   (opening range = infx spread when quiet)
+
+=== US100.cash ===
+  asia_to_london (causal trailing-250 flag): n=1039 quiet=198
+    P(spike) diff = -0.438 CI[-0.510,-0.364] p=0.000
+    per year P(spike) quiet vs rest: 2022:0.42/0.80  2023:0.33/0.82  2024:0.46/0.89  2025:0.38/0.82
+    P(leaves opening range) diff = -0.000 CI[-0.034,+0.029] p=0.999
+    P(reverts to mid before extending) quiet=0.519 rest=0.501 diff=+0.018 CI[-0.065,+0.095] p=0.671
+    fade expectancy NET of spread: quiet=-0.0042 CI[-0.0903,+0.0771]  rest=-0.0171 CI[-0.0590,+0.0242]   (opening range = 26x spread when quiet)
+  ny_cash_open (causal trailing-250 flag): n=995 quiet=181
+    P(spike) diff = -0.115 CI[-0.166,-0.066] p=0.000
+    per year P(spike) quiet vs rest: 2022:1.00/0.99  2023:0.77/0.97  2024:0.93/0.98  2025:0.80/0.97
+    P(leaves opening range) diff = -0.006 CI[-0.050,+0.035] p=0.800
+    P(reverts to mid before extending) quiet=0.455 rest=0.393 diff=+0.062 CI[-0.022,+0.149] p=0.147
+    fade expectancy NET of spread: quiet=+0.1097 CI[+0.0374,+0.1775]  rest=+0.0685 CI[+0.0361,+0.1009]   (opening range = 129x spread when quiet)
+
+=== US500.cash ===
+  asia_to_london (causal trailing-250 flag): n=1038 quiet=205
+    P(spike) diff = -0.462 CI[-0.533,-0.392] p=0.000
+    per year P(spike) quiet vs rest: 2022:0.29/0.89  2023:0.41/0.81  2024:0.47/0.85  2025:0.36/0.85
+    P(leaves opening range) diff = +0.018 CI[-0.013,+0.044] p=0.229
+    P(reverts to mid before extending) quiet=0.553 rest=0.531 diff=+0.021 CI[-0.058,+0.097] p=0.613
+    fade expectancy NET of spread: quiet=-0.0160 CI[-0.0984,+0.0664]  rest=+0.0117 CI[-0.0278,+0.0517]   (opening range = 18x spread when quiet)
+  ny_cash_open (causal trailing-250 flag): n=995 quiet=195
+    P(spike) diff = -0.264 CI[-0.332,-0.198] p=0.000
+    per year P(spike) quiet vs rest: 2022:0.73/0.93  2023:0.73/0.94  2024:0.77/0.94  2025:0.48/0.94  2026:0.79/0.96
+    P(leaves opening range) diff = +0.009 CI[-0.024,+0.038] p=0.525
+    P(reverts to mid before extending) quiet=0.431 rest=0.441 diff=-0.010 CI[-0.087,+0.071] p=0.763
+    fade expectancy NET of spread: quiet=+0.0177 CI[-0.0611,+0.0927]  rest=+0.0557 CI[+0.0199,+0.0903]   (opening range = 57x spread when quiet)
+
+=== US30.cash ===
+  asia_to_london (causal trailing-250 flag): n=1038 quiet=211
+    P(spike) diff = -0.333 CI[-0.405,-0.262] p=0.000
+    per year P(spike) quiet vs rest: 2022:0.32/0.89  2023:0.44/0.82  2024:0.66/0.88  2025:0.61/0.89  2026:0.55/0.89
+    P(leaves opening range) diff = +0.026 CI[+0.002,+0.047] p=0.036
+    P(reverts to mid before extending) quiet=0.512 rest=0.514 diff=-0.002 CI[-0.081,+0.071] p=0.943
+    fade expectancy NET of spread: quiet=-0.0373 CI[-0.1223,+0.0458]  rest=+0.0372 CI[-0.0028,+0.0753]   (opening range = 34x spread when quiet)
+  ny_cash_open (causal trailing-250 flag): n=995 quiet=186
+    P(spike) diff = -0.087 CI[-0.135,-0.044] p=0.001
+    per year P(spike) quiet vs rest: 2022:0.86/0.94  2023:0.88/0.96  2024:0.84/0.99  2025:0.91/0.99
+    P(leaves opening range) diff = -0.019 CI[-0.068,+0.029] p=0.494
+    P(reverts to mid before extending) quiet=0.430 rest=0.424 diff=+0.006 CI[-0.078,+0.091] p=0.868
+    fade expectancy NET of spread: quiet=+0.0828 CI[+0.0102,+0.1525]  rest=+0.0670 CI[+0.0305,+0.1009]   (opening range = 114x spread when quiet)
+
+=== GER40.cash ===
+  asia_to_london (causal trailing-250 flag): n=1022 quiet=209
+    P(spike) diff = -0.142 CI[-0.199,-0.088] p=0.000
+    per year P(spike) quiet vs rest: 2022:0.66/0.94  2023:0.87/0.96  2024:0.72/0.94  2025:0.91/0.97  2026:0.83/0.99
+    P(leaves opening range) diff = -0.013 CI[-0.059,+0.028] p=0.554
+    P(reverts to mid before extending) quiet=0.421 rest=0.416 diff=+0.005 CI[-0.074,+0.088] p=0.923
+    fade expectancy NET of spread: quiet=-0.0273 CI[-0.1056,+0.0506]  rest=+0.0300 CI[-0.0082,+0.0643]   (opening range = 68x spread when quiet)
+  ny_cash_open (causal trailing-250 flag): n=1020 quiet=191
+    P(spike) diff = -0.336 CI[-0.410,-0.261] p=0.000
+    per year P(spike) quiet vs rest: 2022:0.38/0.71  2023:0.36/0.70  2024:0.33/0.73  2025:0.35/0.72  2026:0.59/0.73
+    P(leaves opening range) diff = +0.009 CI[-0.034,+0.052] p=0.707
+    P(reverts to mid before extending) quiet=0.406 rest=0.411 diff=-0.005 CI[-0.085,+0.077] p=0.869
+    fade expectancy NET of spread: quiet=-0.0182 CI[-0.0979,+0.0615]  rest=+0.0526 CI[+0.0192,+0.0875]   (opening range = 59x spread when quiet)
+[research log] 24 new, 282 total -> results/research_log.json
+
+wrote results/r6_consequence.json

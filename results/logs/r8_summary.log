@@ -1,0 +1,40 @@
+total registered tests : 330
+  pre-specified with p : 246
+  exploratory          : 48
+  by part: {'1': 24, '11/12': 12, '14': 12, '2': 6, '2/7': 6, '4': 30, '5': 48, '6': 12, '7': 30, '8/9/10': 102, 'exploratory': 48}
+
+raw p<0.05           : 78 / 246  (chance expectation 12.3)
+survive BH FDR q=0.10: 73 / 246
+
+survivors by part:
+  part 11/12     12 tests
+  part 14         2 tests
+  part 4         15 tests
+  part 5         26 tests
+  part 6         12 tests
+  part 8/9/10     6 tests
+
+DIRECTIONAL family (parts 7 + 8/9/10): 132 tests, 9 raw p<0.05 (chance 6.6), 0 survive BH q=0.10
+
+cross-instrument sign agreement in the directional screen (6 instruments each):
+    v_htf_slope      same-sign 6/6  raw p<0.05 on 2
+    v_sessopen       same-sign 6/6  raw p<0.05 on 1
+    v_vwap_dist      same-sign 6/6  raw p<0.05 on 0
+    v_mom288         same-sign 5/6  raw p<0.05 on 1
+    v_pdl            same-sign 4/6  raw p<0.05 on 1
+    v_pdh            same-sign 4/6  raw p<0.05 on 1
+    v_impulse        same-sign 4/6  raw p<0.05 on 1
+    v_rsi_aligned    same-sign 4/6  raw p<0.05 on 0
+    v_mom12          same-sign 4/6  raw p<0.05 on 0
+    v_htf_dist       same-sign 4/6  raw p<0.05 on 0
+    v_close_loc      same-sign 4/6  raw p<0.05 on 0
+    v_atr_slope      same-sign 4/6  raw p<0.05 on 0
+    v_adx            same-sign 4/6  raw p<0.05 on 0
+    v_abn_prev       same-sign 3/6  raw p<0.05 on 2
+    v_pos_in_box     same-sign 3/6  raw p<0.05 on 0
+    v_mom48          same-sign 3/6  raw p<0.05 on 0
+    v_body_frac      same-sign 3/6  raw p<0.05 on 0
+
+VOLATILITY family: 102 tests, 67 survive BH q=0.10
+
+wrote results/r8_summary.json

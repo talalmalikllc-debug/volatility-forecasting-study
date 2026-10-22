@@ -1,0 +1,105 @@
+
+=== XAUUSD === (clock-standardised episodes, n=8301)
+  forward 2h activity vs seasonal normal: 1.167 CI[1.137,1.200]  | unconditional baseline 1.180
+  P(clock-referenced spike): 0.579 vs tod x month matched 0.557  lift=1.040 CI[1.014,1.069] p=0.003
+  P(spike)=0.577  P(gradual)=0.305  P(stays low)=0.118  P(exits box)=0.964  P(continue|exit)=0.482
+  post-exit directional return: -0.0323 ATR CI[-0.1428,+0.0778]   MFE=3.26 MAE=3.43
+  by DEPTH (min percentile reached in the episode):
+    d0-5         n= 3218 fwd_abn=1.209 P(spike)=0.625 P(cont|exit)=0.476 post_ret=-0.1443
+    d10-15       n= 1577 fwd_abn=1.117 P(spike)=0.531 P(cont|exit)=0.490 post_ret=+0.1282
+    d15-20       n= 2398 fwd_abn=1.138 P(spike)=0.535 P(cont|exit)=0.489 post_ret=+0.0352
+    d5-10        n= 1108 fwd_abn=1.176 P(spike)=0.591 P(cont|exit)=0.472 post_ret=-0.1096
+  by DURATION (bars already compressed):
+    1-3          n= 4135 fwd_abn=1.129 P(spike)=0.541 P(cont|exit)=0.486 post_ret=+0.0264 CI[-0.1018,+0.1689]
+    4-6          n= 1118 fwd_abn=1.157 P(spike)=0.584 P(cont|exit)=0.487 post_ret=-0.0965 CI[-0.3886,+0.1894]
+    7-12         n= 1061 fwd_abn=1.186 P(spike)=0.617 P(cont|exit)=0.467 post_ret=-0.2113 CI[-0.4882,+0.0576]
+    13-24        n= 1060 fwd_abn=1.256 P(spike)=0.640 P(cont|exit)=0.467 post_ret=-0.0059 CI[-0.3157,+0.3027]
+    25+          n=  927 fwd_abn=1.219 P(spike)=0.611 P(cont|exit)=0.493 post_ret=-0.0482 CI[-0.3941,+0.2894]
+
+=== EURUSD === (clock-standardised episodes, n=9432)
+  forward 2h activity vs seasonal normal: 1.090 CI[1.072,1.109]  | unconditional baseline 1.094
+  P(clock-referenced spike): 0.546 vs tod x month matched 0.520  lift=1.052 CI[1.025,1.081] p=0.001
+  P(spike)=0.547  P(gradual)=0.326  P(stays low)=0.127  P(exits box)=0.968  P(continue|exit)=0.494
+  post-exit directional return: -0.0284 ATR CI[-0.1244,+0.0714]   MFE=3.24 MAE=3.56
+  by DEPTH (min percentile reached in the episode):
+    d0-5         n= 3727 fwd_abn=1.118 P(spike)=0.590 P(cont|exit)=0.491 post_ret=+0.0374
+    d10-15       n= 1701 fwd_abn=1.085 P(spike)=0.534 P(cont|exit)=0.494 post_ret=-0.0343
+    d15-20       n= 2625 fwd_abn=1.052 P(spike)=0.493 P(cont|exit)=0.501 post_ret=-0.0092
+    d5-10        n= 1379 fwd_abn=1.094 P(spike)=0.551 P(cont|exit)=0.489 post_ret=-0.2244
+  by DURATION (bars already compressed):
+    1-3          n= 4812 fwd_abn=1.072 P(spike)=0.521 P(cont|exit)=0.501 post_ret=-0.0195 CI[-0.1463,+0.1047]
+    4-6          n= 1300 fwd_abn=1.102 P(spike)=0.568 P(cont|exit)=0.480 post_ret=-0.1837 CI[-0.4403,+0.0848]
+    7-12         n= 1227 fwd_abn=1.099 P(spike)=0.580 P(cont|exit)=0.498 post_ret=+0.0809 CI[-0.1881,+0.3603]
+    13-24        n= 1120 fwd_abn=1.129 P(spike)=0.594 P(cont|exit)=0.490 post_ret=-0.0296 CI[-0.3183,+0.3055]
+    25+          n=  973 fwd_abn=1.109 P(spike)=0.554 P(cont|exit)=0.478 post_ret=+0.0056 CI[-0.3196,+0.3206]
+
+=== US100.cash === (clock-standardised episodes, n=8149)
+  forward 2h activity vs seasonal normal: 1.142 CI[1.116,1.169]  | unconditional baseline 1.150
+  P(clock-referenced spike): 0.591 vs tod x month matched 0.572  lift=1.033 CI[1.004,1.063] p=0.021
+  P(spike)=0.587  P(gradual)=0.294  P(stays low)=0.119  P(exits box)=0.963  P(continue|exit)=0.497
+  post-exit directional return: +0.0578 ATR CI[-0.0649,+0.1805]   MFE=3.51 MAE=3.64
+  by DEPTH (min percentile reached in the episode):
+    d0-5         n= 3276 fwd_abn=1.175 P(spike)=0.629 P(cont|exit)=0.487 post_ret=+0.0749
+    d10-15       n= 1500 fwd_abn=1.107 P(spike)=0.555 P(cont|exit)=0.493 post_ret=+0.1439
+    d15-20       n= 2274 fwd_abn=1.108 P(spike)=0.550 P(cont|exit)=0.507 post_ret=+0.0240
+    d5-10        n= 1099 fwd_abn=1.163 P(spike)=0.581 P(cont|exit)=0.507 post_ret=-0.0373
+  by DURATION (bars already compressed):
+    1-3          n= 3972 fwd_abn=1.118 P(spike)=0.561 P(cont|exit)=0.507 post_ret=+0.0620 CI[-0.0965,+0.2219]
+    4-6          n= 1139 fwd_abn=1.143 P(spike)=0.600 P(cont|exit)=0.482 post_ret=-0.0061 CI[-0.3102,+0.2907]
+    7-12         n= 1063 fwd_abn=1.171 P(spike)=0.620 P(cont|exit)=0.474 post_ret=-0.0606 CI[-0.3785,+0.2785]
+    13-24        n=  982 fwd_abn=1.203 P(spike)=0.623 P(cont|exit)=0.492 post_ret=+0.1106 CI[-0.2195,+0.4431]
+    25+          n=  993 fwd_abn=1.150 P(spike)=0.605 P(cont|exit)=0.503 post_ret=+0.2228 CI[-0.1478,+0.6001]
+
+=== US500.cash === (clock-standardised episodes, n=7928)
+  forward 2h activity vs seasonal normal: 1.148 CI[1.119,1.179]  | unconditional baseline 1.165
+  P(clock-referenced spike): 0.586 vs tod x month matched 0.572  lift=1.024 CI[0.994,1.052] p=0.113
+  P(spike)=0.581  P(gradual)=0.292  P(stays low)=0.127  P(exits box)=0.958  P(continue|exit)=0.482
+  post-exit directional return: -0.0763 ATR CI[-0.1976,+0.0504]   MFE=3.45 MAE=3.75
+  by DEPTH (min percentile reached in the episode):
+    d0-5         n= 3162 fwd_abn=1.176 P(spike)=0.617 P(cont|exit)=0.472 post_ret=-0.1753
+    d10-15       n= 1431 fwd_abn=1.128 P(spike)=0.559 P(cont|exit)=0.471 post_ret=-0.1336
+    d15-20       n= 2260 fwd_abn=1.130 P(spike)=0.551 P(cont|exit)=0.490 post_ret=+0.0422
+    d5-10        n= 1075 fwd_abn=1.134 P(spike)=0.567 P(cont|exit)=0.505 post_ret=+0.0138
+  by DURATION (bars already compressed):
+    1-3          n= 3871 fwd_abn=1.123 P(spike)=0.555 P(cont|exit)=0.486 post_ret=-0.0306 CI[-0.1838,+0.1263]
+    4-6          n= 1092 fwd_abn=1.161 P(spike)=0.592 P(cont|exit)=0.471 post_ret=-0.3259 CI[-0.6737,-0.0062]
+    7-12         n=  999 fwd_abn=1.185 P(spike)=0.620 P(cont|exit)=0.489 post_ret=+0.0065 CI[-0.3217,+0.3347]
+    13-24        n=  978 fwd_abn=1.172 P(spike)=0.597 P(cont|exit)=0.481 post_ret=-0.0661 CI[-0.4008,+0.2545]
+    25+          n=  988 fwd_abn=1.174 P(spike)=0.615 P(cont|exit)=0.465 post_ret=-0.0723 CI[-0.4823,+0.3362]
+
+=== US30.cash === (clock-standardised episodes, n=8158)
+  forward 2h activity vs seasonal normal: 1.136 CI[1.110,1.163]  | unconditional baseline 1.148
+  P(clock-referenced spike): 0.586 vs tod x month matched 0.570  lift=1.029 CI[1.000,1.057] p=0.052
+  P(spike)=0.583  P(gradual)=0.295  P(stays low)=0.122  P(exits box)=0.962  P(continue|exit)=0.488
+  post-exit directional return: -0.0915 ATR CI[-0.2086,+0.0307]   MFE=3.54 MAE=3.82
+  by DEPTH (min percentile reached in the episode):
+    d0-5         n= 3264 fwd_abn=1.157 P(spike)=0.602 P(cont|exit)=0.482 post_ret=-0.1106
+    d10-15       n= 1531 fwd_abn=1.118 P(spike)=0.579 P(cont|exit)=0.496 post_ret=+0.0685
+    d15-20       n= 2317 fwd_abn=1.124 P(spike)=0.557 P(cont|exit)=0.493 post_ret=-0.0727
+    d5-10        n= 1046 fwd_abn=1.125 P(spike)=0.589 P(cont|exit)=0.479 post_ret=-0.3147
+  by DURATION (bars already compressed):
+    1-3          n= 4012 fwd_abn=1.128 P(spike)=0.579 P(cont|exit)=0.494 post_ret=-0.0142 CI[-0.1768,+0.1532]
+    4-6          n= 1130 fwd_abn=1.137 P(spike)=0.584 P(cont|exit)=0.472 post_ret=-0.2792 CI[-0.5931,+0.0202]
+    7-12         n= 1010 fwd_abn=1.120 P(spike)=0.574 P(cont|exit)=0.479 post_ret=-0.3273 CI[-0.6278,-0.0114]
+    13-24        n= 1005 fwd_abn=1.175 P(spike)=0.606 P(cont|exit)=0.492 post_ret=-0.2020 CI[-0.5617,+0.1402]
+    25+          n= 1001 fwd_abn=1.146 P(spike)=0.585 P(cont|exit)=0.483 post_ret=+0.1990 CI[-0.2123,+0.5982]
+
+=== GER40.cash === (clock-standardised episodes, n=7601)
+  forward 2h activity vs seasonal normal: 1.114 CI[1.088,1.139]  | unconditional baseline 1.139
+  P(clock-referenced spike): 0.577 vs tod x month matched 0.569  lift=1.015 CI[0.985,1.043] p=0.347
+  P(spike)=0.560  P(gradual)=0.302  P(stays low)=0.139  P(exits box)=0.958  P(continue|exit)=0.492
+  post-exit directional return: -0.0192 ATR CI[-0.1343,+0.0996]   MFE=3.47 MAE=3.69
+  by DEPTH (min percentile reached in the episode):
+    d0-5         n= 2999 fwd_abn=1.151 P(spike)=0.605 P(cont|exit)=0.492 post_ret=+0.0687
+    d10-15       n= 1423 fwd_abn=1.098 P(spike)=0.535 P(cont|exit)=0.506 post_ret=+0.0064
+    d15-20       n= 2183 fwd_abn=1.072 P(spike)=0.508 P(cont|exit)=0.486 post_ret=-0.0665
+    d5-10        n=  996 fwd_abn=1.113 P(spike)=0.572 P(cont|exit)=0.484 post_ret=-0.1914
+  by DURATION (bars already compressed):
+    1-3          n= 3727 fwd_abn=1.080 P(spike)=0.534 P(cont|exit)=0.491 post_ret=-0.0781 CI[-0.2299,+0.0774]
+    4-6          n= 1025 fwd_abn=1.116 P(spike)=0.570 P(cont|exit)=0.497 post_ret=-0.0595 CI[-0.3726,+0.2576]
+    7-12         n=  970 fwd_abn=1.149 P(spike)=0.568 P(cont|exit)=0.473 post_ret=+0.0339 CI[-0.2654,+0.3458]
+    13-24        n=  916 fwd_abn=1.152 P(spike)=0.597 P(cont|exit)=0.508 post_ret=+0.0305 CI[-0.3170,+0.3778]
+    25+          n=  963 fwd_abn=1.166 P(spike)=0.603 P(cont|exit)=0.497 post_ret=+0.2012 CI[-0.1906,+0.6026]
+[research log] 12 new, 36 total -> results/research_log.json
+
+wrote results/r2_transitions.json

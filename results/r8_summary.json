@@ -1,0 +1,16 @@
+{
+ "n_tests": 330,
+ "n_prespecified_with_p": 246,
+ "n_exploratory": 48,
+ "n_raw_sig": 78,
+ "n_bh_survive": 73,
+ "directional_family": {
+  "n": 132,
+  "n_raw_sig": 9,
+  "n_bh_survive": 0
+ },
+ "volatility_family": {
+  "n": 102,
+  "n_bh_survive": 67
+ }
+}

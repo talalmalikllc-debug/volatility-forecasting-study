@@ -1,0 +1,63 @@
+
+=== XAUUSD ===
+  asia_to_london   n=1159 quiet=232  P(spike after) quiet=0.185 vs rest=0.654  diff=-0.468 CI[-0.531,-0.407] p=0.000
+                       post activity quiet=0.830 vs rest=1.279 diff=-0.449 CI[-0.499,-0.404] p=0.000   | direction carry-over all=+0.096[-0.175,+0.359] quiet=+0.096[-0.240,+0.415]
+  london_to_ny     n=1159 quiet=232  P(spike after) quiet=0.629 vs rest=0.858  diff=-0.228 CI[-0.294,-0.164] p=0.000
+                       post activity quiet=1.122 vs rest=1.522 diff=-0.400 CI[-0.465,-0.338] p=0.000   | direction carry-over all=+0.253[-0.049,+0.571] quiet=+0.278[-0.291,+0.869]
+  ny_cash_open     n=1159 quiet=232  P(spike after) quiet=0.397 vs rest=0.709  diff=-0.312 CI[-0.380,-0.243] p=0.000
+                       post activity quiet=0.858 vs rest=1.265 diff=-0.406 CI[-0.458,-0.358] p=0.000   | direction carry-over all=+0.170[-0.067,+0.418] quiet=+0.124[-0.287,+0.538]
+  ny_am_to_pm      n=1149 quiet=230  P(spike after) quiet=0.096 vs rest=0.373  diff=-0.278 CI[-0.327,-0.228] p=0.000
+                       post activity quiet=0.605 vs rest=1.028 diff=-0.423 CI[-0.471,-0.380] p=0.000   | direction carry-over all=-0.058[-0.248,+0.148] quiet=+0.144[-0.133,+0.440]
+
+=== EURUSD ===
+  asia_to_london   n=1165 quiet=233  P(spike after) quiet=0.369 vs rest=0.722  diff=-0.353 CI[-0.423,-0.285] p=0.000
+                       post activity quiet=0.930 vs rest=1.257 diff=-0.328 CI[-0.369,-0.287] p=0.000   | direction carry-over all=+0.108[-0.151,+0.360] quiet=+0.240[-0.183,+0.689]
+  london_to_ny     n=1164 quiet=233  P(spike after) quiet=0.541 vs rest=0.690  diff=-0.149 CI[-0.219,-0.078] p=0.000
+                       post activity quiet=1.125 vs rest=1.328 diff=-0.203 CI[-0.277,-0.130] p=0.000   | direction carry-over all=-0.139[-0.431,+0.155] quiet=+0.140[-0.502,+0.828]
+  ny_cash_open     n=1165 quiet=233  P(spike after) quiet=0.335 vs rest=0.622  diff=-0.288 CI[-0.354,-0.220] p=0.000
+                       post activity quiet=0.851 vs rest=1.159 diff=-0.307 CI[-0.347,-0.266] p=0.000   | direction carry-over all=-0.058[-0.280,+0.151] quiet=-0.020[-0.479,+0.439]
+  ny_am_to_pm      n=1165 quiet=233  P(spike after) quiet=0.073 vs rest=0.296  diff=-0.223 CI[-0.266,-0.180] p=0.000
+                       post activity quiet=0.585 vs rest=0.918 diff=-0.332 CI[-0.362,-0.303] p=0.000   | direction carry-over all=-0.052[-0.218,+0.113] quiet=-0.159[-0.415,+0.088]
+
+=== US100.cash ===
+  asia_to_london   n=1160 quiet=232  P(spike after) quiet=0.293 vs rest=0.805  diff=-0.512 CI[-0.575,-0.449] p=0.000
+                       post activity quiet=0.818 vs rest=1.372 diff=-0.554 CI[-0.604,-0.506] p=0.000   | direction carry-over all=+0.057[-0.201,+0.313] quiet=-0.041[-0.405,+0.329]
+  london_to_ny     n=1155 quiet=231  P(spike after) quiet=0.805 vs rest=0.951  diff=-0.146 CI[-0.200,-0.093] p=0.000
+                       post activity quiet=1.146 vs rest=1.694 diff=-0.548 CI[-0.621,-0.473] p=0.000   | direction carry-over all=-0.194[-0.575,+0.180] quiet=-0.238[-0.925,+0.462]
+  ny_cash_open     n=1156 quiet=232  P(spike after) quiet=0.741 vs rest=0.968  diff=-0.226 CI[-0.283,-0.171] p=0.000
+                       post activity quiet=0.945 vs rest=1.453 diff=-0.508 CI[-0.562,-0.454] p=0.000   | direction carry-over all=+0.051[-0.227,+0.332] quiet=-0.132[-0.553,+0.287]
+  ny_am_to_pm      n=1116 quiet=224  P(spike after) quiet=0.147 vs rest=0.400  diff=-0.253 CI[-0.311,-0.195] p=0.000
+                       post activity quiet=0.635 vs rest=1.051 diff=-0.416 CI[-0.453,-0.380] p=0.000   | direction carry-over all=+0.013[-0.192,+0.223] quiet=-0.030[-0.327,+0.271]
+
+=== US500.cash ===
+  asia_to_london   n=1159 quiet=232  P(spike after) quiet=0.254 vs rest=0.804  diff=-0.549 CI[-0.608,-0.488] p=0.000
+                       post activity quiet=0.798 vs rest=1.420 diff=-0.621 CI[-0.677,-0.569] p=0.000   | direction carry-over all=+0.228[-0.048,+0.497] quiet=+0.046[-0.331,+0.409]
+  london_to_ny     n=1155 quiet=231  P(spike after) quiet=0.671 vs rest=0.919  diff=-0.248 CI[-0.307,-0.184] p=0.000
+                       post activity quiet=1.036 vs rest=1.671 diff=-0.635 CI[-0.715,-0.552] p=0.000   | direction carry-over all=-0.194[-0.565,+0.167] quiet=-0.076[-0.732,+0.537]
+  ny_cash_open     n=1156 quiet=232  P(spike after) quiet=0.565 vs rest=0.920  diff=-0.355 CI[-0.421,-0.290] p=0.000
+                       post activity quiet=0.857 vs rest=1.469 diff=-0.612 CI[-0.672,-0.556] p=0.000   | direction carry-over all=+0.154[-0.121,+0.438] quiet=+0.111[-0.276,+0.495]
+  ny_am_to_pm      n=1116 quiet=224  P(spike after) quiet=0.152 vs rest=0.482  diff=-0.330 CI[-0.385,-0.273] p=0.000
+                       post activity quiet=0.616 vs rest=1.111 diff=-0.495 CI[-0.538,-0.453] p=0.000   | direction carry-over all=-0.054[-0.289,+0.177] quiet=+0.007[-0.289,+0.288]
+
+=== US30.cash ===
+  asia_to_london   n=1159 quiet=232  P(spike after) quiet=0.302 vs rest=0.822  diff=-0.520 CI[-0.584,-0.457] p=0.000
+                       post activity quiet=0.826 vs rest=1.419 diff=-0.593 CI[-0.649,-0.540] p=0.000   | direction carry-over all=+0.159[-0.112,+0.437] quiet=-0.095[-0.444,+0.256]
+  london_to_ny     n=1155 quiet=231  P(spike after) quiet=0.827 vs rest=0.955  diff=-0.128 CI[-0.179,-0.079] p=0.000
+                       post activity quiet=1.185 vs rest=1.696 diff=-0.512 CI[-0.589,-0.436] p=0.000   | direction carry-over all=-0.162[-0.536,+0.223] quiet=+0.121[-0.571,+0.773]
+  ny_cash_open     n=1156 quiet=232  P(spike after) quiet=0.750 vs rest=0.973  diff=-0.223 CI[-0.281,-0.170] p=0.000
+                       post activity quiet=0.933 vs rest=1.413 diff=-0.480 CI[-0.530,-0.433] p=0.000   | direction carry-over all=-0.111[-0.373,+0.151] quiet=+0.198[-0.230,+0.606]
+  ny_am_to_pm      n=1116 quiet=224  P(spike after) quiet=0.156 vs rest=0.445  diff=-0.289 CI[-0.349,-0.233] p=0.000
+                       post activity quiet=0.652 vs rest=1.073 diff=-0.421 CI[-0.460,-0.385] p=0.000   | direction carry-over all=-0.123[-0.345,+0.099] quiet=-0.420[-0.712,-0.140]
+
+=== GER40.cash ===
+  asia_to_london   n=1143 quiet=229  P(spike after) quiet=0.668 vs rest=0.951  diff=-0.283 CI[-0.348,-0.223] p=0.000
+                       post activity quiet=0.930 vs rest=1.385 diff=-0.455 CI[-0.500,-0.411] p=0.000   | direction carry-over all=+0.357[+0.087,+0.609] quiet=-0.136[-0.521,+0.250]
+  london_to_ny     n=1142 quiet=229  P(spike after) quiet=0.371 vs rest=0.690  diff=-0.319 CI[-0.384,-0.249] p=0.000
+                       post activity quiet=0.954 vs rest=1.339 diff=-0.385 CI[-0.444,-0.323] p=0.000   | direction carry-over all=-0.013[-0.288,+0.258] quiet=+0.622[+0.134,+1.140]
+  ny_cash_open     n=1143 quiet=229  P(spike after) quiet=0.323 vs rest=0.670  diff=-0.346 CI[-0.413,-0.277] p=0.000
+                       post activity quiet=0.843 vs rest=1.263 diff=-0.420 CI[-0.461,-0.378] p=0.000   | direction carry-over all=-0.063[-0.309,+0.183] quiet=-0.026[-0.401,+0.347]
+  ny_am_to_pm      n=1139 quiet=228  P(spike after) quiet=0.110 vs rest=0.401  diff=-0.291 CI[-0.341,-0.238] p=0.000
+                       post activity quiet=0.550 vs rest=1.010 diff=-0.461 CI[-0.506,-0.415] p=0.000   | direction carry-over all=-0.270[-0.503,-0.044] quiet=-0.187[-0.428,+0.062]
+[research log] 48 new, 126 total -> results/research_log.json
+
+wrote results/r4_sessions.json
