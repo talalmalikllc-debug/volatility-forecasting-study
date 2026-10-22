@@ -23,7 +23,7 @@ A raw ATR percentile on index CFDs is mostly a clock: 93 to 96% of "compressed" 
 
 $$\text{ATR}_t = \tfrac{13}{14}\,\text{ATR}_{t-1} + \tfrac{1}{14}\,(H_t - L_t)$$
 
-$$S_\tau(t) = \operatorname{median}\left\{\text{ATR}_u \;:\; \tau(u)=\tau(t),\ u \in \text{previous 60 sessions}\right\}, \qquad \text{abn}_t = \frac{\text{ATR}_t}{S_\tau(t)}$$
+$$S_\tau(t) = \mathrm{median}\left\{\text{ATR}_u \;:\; \tau(u)=\tau(t),\ u \in \text{previous 60 sessions}\right\}, \qquad \text{abn}_t = \frac{\text{ATR}_t}{S_\tau(t)}$$
 
 where $\tau(\cdot)$ is the New York 5-minute slot. The baseline is shifted one session so that today never contributes to its own expectation. States come from a causal 100-bar percentile rank:
 
@@ -56,7 +56,7 @@ $$k^\ast = \max\left\{ i : p_{(i)} \le \frac{q\,i}{m} \right\}, \qquad \text{rej
 applied separately to the volatility and directional families.
 
 ### 5. Directional test
-Event: an impulse bar emerging from compression ($\pi_{j-1} < 20$ and $\text{range}_j / S_\tau(j) \ge 2$). Direction $d = \operatorname{sign}(C_j - O_j)$, entry at the *next* bar's open, return measured in units of the impulse bar's own range $R_j$ so that costs sit on the same axis:
+Event: an impulse bar emerging from compression ($\pi_{j-1} < 20$ and $\text{range}_j / S_\tau(j) \ge 2$). Direction $d = \mathrm{sign}(C_j - O_j)$, entry at the *next* bar's open, return measured in units of the impulse bar's own range $R_j$ so that costs sit on the same axis:
 
 $$r_{j,k} = \frac{d\,(C_{j+k} - O_{j+1})}{R_j}, \qquad k \in \{1,3,6,12,24\}$$
 
