@@ -32,7 +32,10 @@ S_\tau(t) = \mathrm{median}\left\{\text{ATR}_u \;:\; \tau(u)=\tau(t),\ u \in \te
 where $`\tau(\cdot)`$ is the New York 5-minute slot. The baseline is shifted one session so that today never contributes to its own expectation. States come from a causal 100-bar percentile rank:
 
 ```math
-\pi_t = \sum_{j=0}^{99} \mathbf{1}\left[\text{abn}_{t-j} \le \text{abn}_t\right] \;\;(\%\text{ of the trailing 100 bars}), \qquad
+\pi_t = \sum_{j=0}^{99} \mathbf{1}\left[\text{abn}_{t-j} \le \text{abn}_t\right] \quad (\%\text{ of the trailing 100 bars})
+```
+
+```math
 \text{state}_t = \begin{cases} \text{compressed} & \pi_t < 20 \\ \text{normal} & 20 \le \pi_t \le 80 \\ \text{high} & 80 < \pi_t \le 95 \\ \text{extreme} & \pi_t > 95 \end{cases}
 ```
 
